@@ -97,7 +97,6 @@ jobs:
           mv /tmp/presto-cli-0.293-executable.jar ./
   
           if [ "${{ github.event_name }}" = "push" ] && \
-             [ "${{ github.repository }}" = "y-scope/presto" ] && \
              [ "${{ github.ref }}" = "refs/heads/release-0.293-clp-connector" ]; then
             export PUBLISH=true
           else
